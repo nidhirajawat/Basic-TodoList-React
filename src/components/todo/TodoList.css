@@ -1,0 +1,58 @@
+/* TodoList.css */
+
+.todo-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .todo-button.show {
+    background-color: #28a745; /* Green for show */
+    color: white;
+  }
+  
+  .todo-button.hide {
+    background-color: #dc3545; /* Red for hide */
+    color: white;
+  }
+  
+  .todo-button:hover {
+    transform: scale(1.05); /* Slightly grow the button */
+  }
+  
+  .todo-button:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  /* Add some basic styling for the Todo list */
+  .todo-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .todo-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-actions button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .todo-actions button:hover {
+    color: #007bff;
+  }
+  
