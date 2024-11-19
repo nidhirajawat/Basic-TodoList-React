@@ -1,0 +1,141 @@
+/* Common CSS */
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 700;
+   line-height: 1;
+}
+
+.btn {
+   border: 1px solid transparent;
+   padding: 8px 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.btn.btn-disabled {
+   pointer-events: none;
+   filter: grayscale(100%);
+   opacity: 0.5;
+}
+
+.btn-primary {
+   background: #0078AA;
+   color: #fff;
+}
+
+.btn-error {
+   background: red;
+}
+
+/* Todo App CSS */
+.todo-app {
+   background: #fff;
+   font-size: 16px;
+
+   h1 {
+      text-align: center;
+   }
+}
+
+.todo-list ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+
+   li {
+      padding: 10px 15px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #ccc;
+
+      .todo-actions {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 10px;
+      }
+
+      button {
+         background: #fff;
+         border: unset;
+         cursor: pointer;
+         height: 25px;
+         width: 25px;
+         border-radius: 100%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         color: green;
+      }
+
+      button:nth-child(2) {
+         color: blue;
+      }
+
+      button:nth-child(3) {
+         color: red;
+      }
+
+      button:hover {
+         background: #efefef;
+         -moz-transform: scale(1.5);
+         -webkit-transform: scale(1.5);
+         -o-transform: scale(1.5);
+         -ms-transform: scale(1.5);
+         transform: scale(1.5);
+      }
+
+
+   }
+
+   li:hover {
+      background: rgb(244, 244, 250);
+   }
+}
+
+.todo-header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.todo-form {
+   .field-group {
+      margin-bottom: 15px;
+   }
+
+   label {
+      margin-bottom: 2px;
+   }
+
+   input,
+   textarea {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 8px;
+   }
+}
+
+.delete-modal-buttons,
+.todo-form-actions {
+   float: right;
+   display: flex;
+   gap: 10px;
+}
